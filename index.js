@@ -33,7 +33,23 @@ const questions = [
     // License
     {
         type: "list", // list - can only choose one, checkbox - you can choose multiple
-        choices: [],
+        choices: [
+            "Apache 2.0 License",
+            "Boost Software License 1.0",
+            "Creative Commons CC0",
+            "Eclipse Public License 1.0",
+            "GNU GPL v2",
+            "GNU GPL v3",
+            "Hippocratic License 2.1",
+            "Hippocratic License 3.0",
+            "IBM Public License Version 1.0",
+            "ISC License (ISC)",
+            "MIT License",
+            "Mozilla Public License 2.0",
+            "Open Data Commons Attribution License (BY)",
+            "Open Database License (ODbL)",
+            "Public Domain Dedication and License (PDDL)"
+        ],
         name: "license",
         message: "What is the project license type?" // Want to use this answer to create a badge, and have a license notice
     },
