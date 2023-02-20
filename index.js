@@ -3,10 +3,14 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// From the docs, the method is inquirer.prompt(questions, answers) => promise. The questions variable will be an array containing question objects. Then the answers obtained from user response will be stored in an object.
+
+// First, create the array of questions for the user
+//Each question will be represented by an object that contains question-related values, depending on the type. 
+
 const questions = [
 
-    // Title
+    // Title (According to the docs, we take type, name and message properties for input type)
     {
         type: "input",
         name: "title",
@@ -30,9 +34,9 @@ const questions = [
         name: "usage",
         message: "Provide the requisite usage information for your project."
     },
-    // License
+    // License (According to the docs, we take type, choices(an array), name and message for list type)
     {
-        type: "list", // list - can only choose one, checkbox - you can choose multiple
+        type: "list", // list used as user can only choose one
         choices: [
             "Apache 2.0 License",
             "Boost Software License 1.0",
@@ -51,7 +55,7 @@ const questions = [
             "Public Domain Dedication and License (PDDL)"
         ],
         name: "license",
-        message: "What is the project license type?" // Want to use this answer to create a badge, and have a license notice
+        message: "What is the project license type?" 
     },
     // Contributing
     {
@@ -81,6 +85,10 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, data, (err) =>
+    
+    err ? console.log(err) : console.log(`Your ${fileName} file has been successfully generated.`));
 }
 
 // function to initialize program
@@ -90,6 +98,7 @@ function init() {
   .prompt(questions)
   .then((answers) => {
     // Use user feedback for... whatever!!
+    console.log(answers);
   })
 //   .catch((error) => {
 //     if (error.isTtyError) {
