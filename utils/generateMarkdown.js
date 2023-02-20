@@ -49,11 +49,11 @@ ${data.installation}
 
 ## Usage  
   
-${data.deployment == null ? "" : `[Link to Deployed ${data.title}](${data.deployment})`}  
+${data.deployment === "" ? "" : `[Link to Deployed ${data.title}](${data.deployment})`}  
 
-${data.repo == null ? "" : `[Link to Project Code Repository](${data.repo})`}  
+${data.repo === "" ? "" : `[Link to Project Code Repository](${data.repo})`}  
 
-${data.demo == null ? "" : `[Screenshot / Demo of the Project Application](${data.demo})`}  
+${data.demo === "" ? "" : `![Screenshot / Demo of the Project Application](${data.demo})`}  
 
 ${data.usage}  
 
