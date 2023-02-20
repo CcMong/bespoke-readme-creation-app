@@ -20,6 +20,53 @@ function generateMarkdown(data) {
   : ""
 }
 
+<div id="description"></div>  
+
+## Description  
+
+${data.description}
+
+
+<div id="installation"></div>  
+
+## Installation  
+
+${data.installation}  
+
+
+<div id="usage"></div>  
+
+## Usage  
+
+${data.usage}  
+
+<div id="license"></div>  
+
+## License  
+
+This project is covered under the ${data.license}. Please refer to the LICENSE documentation for further information.  
+
+<div id="contributing"></div>  
+
+## Contributing  
+
+${data.contributing}  
+
+<div id="tests"></div>  
+
+## Tests  
+
+${data.tests}  
+
+<div id="questions"></div>  
+
+## Questions  
+
+Please feel free to reach out with any questions or feedback you might have. You can contact me through:  
+
+* GitHub: ${data.github}
+* Email: ${data.email}
+
 `;
 }
 
