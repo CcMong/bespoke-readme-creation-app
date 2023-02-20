@@ -119,7 +119,7 @@ function init() {
   .prompt(questions)
   .then((answers) => {
 
-    console.log(answers);
+    //console.log(answers);
 
     writeToFile("README.md", generateMarkdown(answers));
 
