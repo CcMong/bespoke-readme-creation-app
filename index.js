@@ -31,8 +31,29 @@ const questions = [
     // Usage
     {
         type: "input",
+        name: "deployment",
+        message: "Provide a link to where you have the project deployed."
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "Provide the link to the project code repository."
+    },
+    {
+        type: "input",
+        name: "demo",
+        message: "Provide a link to a screenshot of the project or application in use."
+    },
+    {
+        type: "input",
         name: "usage",
         message: "Provide the requisite usage information for your project."
+    },
+    // Credits
+    {
+        type: "input",
+        name: "credits",
+        message: "List any collaborators with links to their GitHub profiles, as well as creators of any third-party assets with links to their primary web presence."
     },
     // License (According to the docs, we take type, choices(an array), name and message for list type)
     {
@@ -67,7 +88,7 @@ const questions = [
     {
         type: "input",
         name: "tests",
-        message: "Provide test instructions for the project."
+        message: "Provide test instructions for the project with examples, if applicable."
     },
     // Questions
     {
@@ -91,27 +112,21 @@ function writeToFile(fileName, data) {
     err ? console.log(err) : console.log(`Your ${fileName} file has been successfully generated.`));
 }
 
-// function to initialize program
+// Function to initialise the program
 function init() {
 
     inquirer
   .prompt(questions)
   .then((answers) => {
-    // Use user feedback for... whatever!!
+
     console.log(answers);
 
     writeToFile("README.md", generateMarkdown(answers));
 
   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
 
 }
 
-// function call to initialize program
+// Calling the function to initialise the application program
+
 init();

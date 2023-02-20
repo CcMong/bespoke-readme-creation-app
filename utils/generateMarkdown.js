@@ -27,13 +27,14 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
-[Description](#description)  
-[Installation](#installation)  
-[Usage](#usage)  
-[License](#license)  
-[Contributing](#contributing)  
-[Tests](#tests)  
-[Questions](#questions)
+- [Description](#description)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Credits](#credits)  
+- [License](#license)  
+- [Contributing](#contributing)  
+- [Tests](#tests)  
+- [Questions](#questions)
 
 
 <div id="installation"></div>  
@@ -47,7 +48,19 @@ ${data.installation}
 
 ## Usage  
 
+[Link to Deployed ${data.title}](${data.deployment})  
+
+[Link to Project Code Repository](${data.repo})  
+
+[Screenshot / Demo of the Project Application](${data.demo})  
+
 ${data.usage}  
+
+<div id="credits"></div>  
+
+## Credits  
+
+${data.credits}  
 
 <div id="license"></div>  
 
@@ -73,7 +86,7 @@ ${data.tests}
 
 Please feel free to reach out with any questions or feedback you might have. You can contact me through:  
 
-* GitHub: ${data.github}
+* GitHub: [@${data.github}](https://github.com/${data.github})
 * Email: ${data.email}
 
 `;
