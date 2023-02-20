@@ -99,6 +99,9 @@ function init() {
   .then((answers) => {
     // Use user feedback for... whatever!!
     console.log(answers);
+
+    writeToFile("README.md", generateMarkdown(answers));
+
   })
 //   .catch((error) => {
 //     if (error.isTtyError) {
