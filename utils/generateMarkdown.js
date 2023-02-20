@@ -26,7 +26,8 @@ function generateMarkdown(data) {
 
 ${data.description}
 
-## Table of Contents
+## Table of Contents  
+
 - [Description](#description)  
 - [Installation](#installation)  
 - [Usage](#usage)  
@@ -47,12 +48,12 @@ ${data.installation}
 <div id="usage"></div>  
 
 ## Usage  
+  
+${data.deployment == null ? "" : `[Link to Deployed ${data.title}](${data.deployment})`}  
 
-[Link to Deployed ${data.title}](${data.deployment})  
+${data.repo == null ? "" : `[Link to Project Code Repository](${data.repo})`}  
 
-[Link to Project Code Repository](${data.repo})  
-
-[Screenshot / Demo of the Project Application](${data.demo})  
+${data.demo == null ? "" : `[Screenshot / Demo of the Project Application](${data.demo})`}  
 
 ${data.usage}  
 
