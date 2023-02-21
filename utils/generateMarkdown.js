@@ -1,5 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+
+  // Template Literal containing the content of the generated markdown file
+
   return `# ${data.title}  
 
   ${data.license == "Apache 2.0 License" ? "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
@@ -92,5 +95,7 @@ Please feel free to reach out with any questions or feedback you might have. You
 
 `;
 }
+
+// Modularisation to export the generateMarkdown function for use in external JS files
 
 module.exports = generateMarkdown;
