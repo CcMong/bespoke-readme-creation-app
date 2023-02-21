@@ -6,7 +6,7 @@
 
 ## Description  
 
-This project is a command-line application that dynamically generates a professional README.md files more quickly and easily, from a user's responses to certain questions asked. A quality professional README is an essential component of open source projects on GitHub, as they provide useful information about what the app was created for, how to install it, how to benefit from using the app, how to report issues or provide feedback, and how to contribute to its future success. This application was built to run in Node.js, and makes use of Node Package Manager (npm) and the inquirer software package. 
+This project is a command-line application that dynamically generates professional README.md files more quickly and easily, from user responses to a list of questions. A quality professional README is an essential component of open source projects on GitHub, as it provides useful information about what the app was created for, how to install it, how to benefit from using the app, how to report issues or provide feedback, and how to contribute to the project's future success. This application was built to run in Node.js, and makes use of Node Package Manager (npm) and the inquirer software package.
 
 ## Table of Contents  
 
@@ -31,13 +31,13 @@ Ensure you have Node.js downloaded on your device. Copy the index.js file along 
 
 ## Usage  
   
-  
+[Link to Video Walkthrough of the App](https://watch.screencastify.com/v/mDYgmZfEHgSCxte9kTl5)  
 
 [Link to Project Code Repository](https://github.com/CcMong/bespoke-readme-creation-app)  
 
 ![Screenshot / Demo of the Project Application](./assets/images/test-screenshot.JPG)  
 
-Invoke the application from the terminal using the following command: `node index.js`. You will be asked a series of questions, which require the user to either make a choice or enter a string input. After each input, press "Enter" to move to the next question. After all the questions have been answered, the README.md file will be generated within your repo folder, and accompanied by a success message.  
+Invoke the application from the terminal using the following command: `node index.js`. You will be asked a series of questions, which require the user to either make a choice or enter a string input. After each input, press "Enter" to move to the next question. You can also simply press "Enter" if you wish to leave a question unanswered. After all the questions have been answered, the README.md file will be generated within your repo folder, and accompanied by a success message.  
 
 <div id="credits"></div>  
 

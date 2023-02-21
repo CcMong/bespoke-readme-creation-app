@@ -61,7 +61,7 @@ const questions = [
         choices: [
             "Apache 2.0 License",
             "Boost Software License 1.0",
-            "Creative Commons CC0",
+            "Creative Commons CC0 License",
             "Eclipse Public License 1.0",
             "GNU GPL v2",
             "GNU GPL v3",
